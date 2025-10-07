@@ -824,7 +824,7 @@ th, td { padding: 12px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); te
 
 
 
-/*about us  */
+/*about us  START */
 
 .about-section {
   background: #fff;
@@ -1703,5 +1703,1385 @@ body {
     font-size: 1.8rem;
   }
 }
+
+/* ABOUT-PAGE END*/
+
+
+/* SERVICES PAGE START*/
+
+/* === Services Section === */
+/* service GRID*/
+.services-section {
+  background: #fff;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.services-container {
+  text-align: center;
+}
+
+.services-container h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.services-container h2 span {
+  color: #c8ff3d;
+  background-color: black;
+}
+
+.services-container .intro-text {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+/* === Grid Layout === */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* === Service Card === */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* === Image Section === */
+.service-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.05);
+}
+
+/* === Content === */
+.service-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.service-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.read-more {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.read-more i {
+  color: #c8ff3d;
+  transition: 0.3s ease;
+}
+
+.read-more:hover {
+  color: #c8ff3d;
+}
+
+.read-more:hover i {
+  transform: translateX(4px);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .services-container h2 {
+    font-size: 2rem;
+  }
+
+  .service-image {
+    height: 200px;
+  }
+}
+
+
+/* services 1 css means that first content */
+
+/* ==================== SERVICE DETAILS ==================== */
+.service-details {
+  background: #fff;
+  color: #000;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.service-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* ==================== SIDEBAR ==================== */
+.service-sidebar {
+  flex: 1;
+  min-width: 280px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  /* --- STICKY BEHAVIOR --- */
+  position: sticky;
+  top: 100px; /* distance from top before sticking */
+  align-self: flex-start;
+  height: fit-content;
+  z-index: 10;
+}
+
+.service-sidebar h3 {
+  color: #000;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.service-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.service-sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.service-sidebar ul li a {
+  display: block;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.service-sidebar ul li a:hover,
+.service-sidebar ul li a.active {
+  background: #c8ff3d;
+  color: #000;
+  border-color: #c8ff3d;
+}
+
+/* ==================== QUOTE BOX ==================== */
+.quote-box {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.quote-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.quote-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.quote-overlay h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.quote-overlay p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.quote-btn {
+  background: #c8ff3d;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.quote-btn:hover {
+  background: #b3ff00;
+}
+
+/* ==================== RIGHT CONTENT ==================== */
+.service-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.service-image {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
+}
+
+.service-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.service-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.service-points {
+  list-style: none;
+  padding: 0;
+}
+
+.service-points li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-points li::before {
+  content: "✔";
+  color: #c8ff3d;
+  font-weight: 700;
+}
+
+
+/* ==================== FITNESS OVERVIEW SECTION ==================== */
+.fitness-heading {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.fitness-heading h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.fitness-heading h2 span {
+  color: #c8ff3d;
+  background-color: black;
+}
+
+.fitness-heading p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* ==================== FEATURE BOXES ==================== */
+.fitness-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.feature-box {
+  flex: 1 1 250px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  background: #c8ff3d;
+  color: #000;
+  transform: translateY(-5px);
+}
+
+.feature-box i {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #c8ff3d;
+}
+
+.feature-box h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ==================== VIDEO SECTION ==================== */
+.workout-video {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.workout-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+  .fitness-features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-box {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitness-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-box h4 {
+    font-size: 1rem;
+  }
+
+  .feature-box p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+  .service-container {
+    flex-direction: column;
+  }
+
+  .service-sidebar {
+    position: static; /* disable sticky on small screens */
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* ================= BLOG SECTION ================= */
+/* ================= BLOG SECTION ================= */
+.blog-section {
+  background: #fff;
+  color: #000;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+/* === Blog Grid Layout === */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 30px;
+}
+
+/* === Blog Card === */
+.blog-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  padding: 20px 20px 10px;
+  line-height: 1.5;
+}
+
+/* === Blog Link === */
+.blog-link {
+  display: inline-block;
+  margin: 0 20px 20px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.blog-link i {
+  margin-left: 6px;
+  color: #c8ff3d;
+}
+
+.blog-link:hover {
+  color: #c8ff3d;
+}
+
+/* === Responsive Design === */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+
+  .blog-heading {
+    font-size: 1.8rem;
+  }
+
+  .blog-card h3 {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* ================= BLOG 1 ================= */
+.blog-single {
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 10%;
+}
+
+/* --- Header --- */
+.blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.blog-meta i {
+  color: #c8ff3d;
+  margin-right: 5px;
+}
+
+/* --- Highlight Bar --- */
+.blog-highlight-bar {
+  background: #c8ff3d;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+.blog-highlight-bar span {
+  margin: 0 10px;
+}
+
+/* --- Blog Content --- */
+.blog-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.blog-content p {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  background: #c8ff3d;
+  color: #000;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote::before {
+  content: "❝";
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+/* --- Headings --- */
+.blog-content h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* --- Lists --- */
+.blog-content ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.blog-content ul li {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- Tags --- */
+.blog-tags {
+  margin-top: 30px;
+}
+
+.blog-tags span {
+  background: #c8ff3d;
+  color: #000;
+  font-weight: 700;
+  padding: 6px 15px;
+  border-radius: 25px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.blog-tags span:hover{
+
+  color:black;
+
+
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-highlight-bar {
+    font-size: 0.8rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.3rem;
+  }
+
+  blockquote {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* ================= BLOG 2 ================= */
+.blog-single {
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 10%;
+}
+
+/* --- Header --- */
+.blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.blog-meta i {
+  color: #c8ff3d;
+  margin-right: 5px;
+}
+
+/* --- Highlight Bar --- */
+.blog-highlight-bar {
+  background: #c8ff3d;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+.blog-highlight-bar span {
+  margin: 0 10px;
+}
+
+/* --- Blog Content --- */
+.blog-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.blog-content p {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  background: #c8ff3d;
+  color: #000;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote::before {
+  content: "❝";
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+/* --- Headings --- */
+.blog-content h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* --- Lists --- */
+.blog-content ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.blog-content ul li {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- Tags --- */
+.blog-tags {
+  margin-top: 30px;
+}
+
+.blog-tags span {
+  background: #c8ff3d;
+  color: #000;
+  font-weight: 700;
+  padding: 6px 15px;
+  border-radius: 25px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* --- Social Icons --- */
+.blog-socials {
+  margin-top: 30px;
+}
+
+.blog-socials a {
+  background: #c8ff3d;
+  color: #000;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.blog-socials a:hover {
+  background: #000;
+  color: #c8ff3d;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-highlight-bar {
+    font-size: 0.8rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.3rem;
+  }
+
+  blockquote {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ================= BLOG 3 ================= */
+.blog-single {
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 10%;
+}
+
+/* --- Header --- */
+.blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.blog-meta i {
+  color: #c8ff3d;
+  margin-right: 5px;
+}
+
+/* --- Highlight Bar --- */
+.blog-highlight-bar {
+  background: #c8ff3d;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+.blog-highlight-bar span {
+  margin: 0 10px;
+}
+
+/* --- Blog Content --- */
+.blog-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.blog-content p {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  background: #c8ff3d;
+  color: #000;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote::before {
+  content: "❝";
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+/* --- Headings --- */
+.blog-content h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* --- Lists --- */
+.blog-content ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.blog-content ul li {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- Tags --- */
+.blog-tags {
+  margin-top: 30px;
+}
+
+.blog-tags span {
+  background: #c8ff3d;
+  color: #000;
+  font-weight: 700;
+  padding: 6px 15px;
+  border-radius: 25px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-highlight-bar {
+    font-size: 0.8rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.3rem;
+  }
+
+  blockquote {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ================= BLOG 4 ================= */
+.blog-single {
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 10%;
+}
+
+/* --- Header --- */
+.blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.blog-meta i {
+  color: #c8ff3d;
+  margin-right: 5px;
+}
+
+/* --- Highlight Bar --- */
+.blog-highlight-bar {
+  background: #c8ff3d;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+.blog-highlight-bar span {
+  margin: 0 10px;
+}
+
+/* --- Blog Content --- */
+.blog-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.blog-content p {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  background: #c8ff3d;
+  color: #000;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote::before {
+  content: "❝";
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+/* --- Headings --- */
+.blog-content h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* --- Lists --- */
+.blog-content ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.blog-content ul li {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- Tags --- */
+.blog-tags {
+  margin-top: 30px;
+}
+
+.blog-tags span {
+  background: #c8ff3d;
+  color: #000;
+  font-weight: 700;
+  padding: 6px 15px;
+  border-radius: 25px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-highlight-bar {
+    font-size: 0.8rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.3rem;
+  }
+
+  blockquote {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Blog single - white background, black text, neon accent */
+.blog-single {
+  background: #fff;
+  color: #000;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.blog-header { text-align: center; margin-bottom: 20px; }
+.blog-header h1 { font-size: 2.2rem; font-weight:800; margin-bottom:8px; }
+.blog-meta { color:#555; font-size:0.95rem; }
+.blog-meta i { color:#c8ff3d; margin-right:6px; }
+
+/* Highlight bar */
+.blog-highlight-bar {
+  background: #c8ff3d;
+  color: #000;
+  text-align:center;
+  font-weight:700;
+  padding:10px 0;
+  margin: 20px 0 40px;
+}
+.blog-highlight-bar span { margin:0 10px; }
+
+/* Content */
+.blog-content { max-width:900px; margin:0 auto; }
+.blog-image img { width:100%; border-radius:12px; margin-bottom:26px; box-shadow:0 6px 18px rgba(0,0,0,0.08); }
+
+.blog-content p { color:#333; line-height:1.7; margin-bottom:18px; font-size:1rem; }
+.blog-content h2 { font-size:1.5rem; font-weight:800; margin-top:30px; margin-bottom:12px; color:#000; }
+
+.blog-content ul { padding-left:20px; margin-bottom:18px; }
+.blog-content ul li { margin-bottom:10px; color:#333; line-height:1.6; }
+
+/* Blockquote style reused */
+blockquote {
+  background:#c8ff3d;
+  color:#000;
+  padding:18px 22px;
+  border-radius:10px;
+  margin:26px 0;
+  font-weight:700;
+  position:relative;
+}
+blockquote::before { content:"❝"; font-size:1.8rem; position:absolute; left:12px; top:8px; color:#000; }
+
+/* Tags & Socials */
+.blog-tags { margin-top:24px; }
+.blog-tags span {
+  background:#c8ff3d;
+  color:#000;
+  padding:6px 14px;
+  border-radius:25px;
+  margin-right:10px;
+  display:inline-block;
+  font-weight:700;
+}
+.blog-socials { margin-top:18px; }
+.blog-socials a {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:36px;height:36px;border-radius:50%;
+  background:#c8ff3d;color:#000;margin-right:8px;text-decoration:none;
+}
+.blog-socials a:hover { background:#000; color:#c8ff3d; }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .blog-header h1 { font-size:1.8rem; }
+}
+@media (max-width: 768px) {
+  .blog-single { padding:50px 6%; }
+  .blog-header h1 { font-size:1.6rem; }
+}
+
+
+
+
+/* Blog Single Page 6 */
+.blog-single {
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 80px 10%;
+}
+
+/* Header */
+.blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.blog-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.blog-meta {
+  font-size: 0.95rem;
+  color: #555;
+}
+.blog-meta i {
+  color: #c8ff3d;
+  margin-right: 5px;
+}
+
+/* Highlight Bar */
+.blog-highlight-bar {
+  background: #c8ff3d;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+.blog-highlight-bar span {
+  margin: 0 10px;
+}
+
+/* Blog Content */
+.blog-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.blog-content p {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Blockquote */
+blockquote {
+  background: #c8ff3d;
+  color: #000;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+blockquote p {
+  margin: 0;
+}
+blockquote::before {
+  content: "❝";
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+/* Headings */
+.blog-content h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Lists */
+.blog-content ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.blog-content ul li {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Tags */
+.blog-tags {
+  margin-top: 30px;
+}
+.blog-tags span {
+  background: #c8ff3d;
+  color: #000;
+  font-weight: 700;
+  padding: 6px 15px;
+  border-radius: 25px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* Social Media */
+.blog-socials {
+  margin-top: 30px;
+}
+.blog-socials a {
+  background: #c8ff3d;
+  color: #000;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+.blog-socials a:hover {
+  background: #000;
+  color: #c8ff3d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-header h1 {
+    font-size: 1.6rem;
+  }
+  .blog-highlight-bar {
+    font-size: 0.8rem;
+  }
+  .blog-content h2 {
+    font-size: 1.3rem;
+  }
+  blockquote {
+    font-size: 0.9rem;
+  }
+}
+
+
 
 
