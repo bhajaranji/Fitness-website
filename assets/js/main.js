@@ -93,4 +93,51 @@
   }
 })();
 
+ //page functionality
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropBtn = document.querySelector(".dropbtn");
+    const dropdown = document.querySelector(".dropdown-content");
+
+    if (dropBtn && dropdown) {
+      let isOpen = false;
+
+      // Toggle dropdown when clicking the "Pages" button
+      dropBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation(); // prevent event from bubbling up
+        isOpen = !isOpen;
+        dropdown.classList.toggle("show-dropdown", isOpen);
+      });
+
+      // Close dropdown when clicking outside of it
+      document.addEventListener("click", function (e) {
+        if (!dropdown.contains(e.target) && !dropBtn.contains(e.target)) {
+          dropdown.classList.remove("show-dropdown");
+          isOpen = false;
+        }
+      });
+    }
+  });
+
+
+
+
+  //loader function //
+
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('.site-nav a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var loader = document.getElementById('logo-loader');
+        loader.style.display = 'flex';
+        setTimeout(function() {
+          window.location.href = link.href;
+        }, 1000);
+      });
+    });
+
+
+// scrolling and moving pricing funbction//
 
