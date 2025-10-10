@@ -16,6 +16,7 @@
   <!-- 🔹 Promo Bar -->
 <div class="promo-bar">COMMIT TO BE FIT WITH STACKLY</div>
 
+
 <!-- 🔹 Header with Dropdown -->
 <header class="site-header light center-nav">
   <div class="container">
@@ -25,7 +26,13 @@
 
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <!-- 🏠 Home Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Home ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="home2.html">Home 2</a></li>
+          </ul>
+        </li>
 
         <!-- 🔽 Pages Dropdown -->
         <li class="dropdown">
@@ -37,8 +44,7 @@
             <li><a href="image-gallery.html">Image Gallery</a></li>
             <li><a href="video-gallery.html">Video Gallery</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="404.html">404 Page</a></li>
-            <li><a href="maintenance.html">Maintenance Page</a></li>
+            <li><a href="404p.html">404 Page</a></li>
           </ul>
         </li>
 
@@ -50,7 +56,7 @@
     </nav>
 
     <div class="header-actions">
-      <a class="btn neon header-join" href="contact.html">JOIN STACKLY</a>
+      <a class="btn neon header-join" href="login.html">JOIN STACKLY</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -59,6 +65,9 @@
     </div>
   </div>
 </header>
+
+
+
 
   <main>
     <section class="hero hero-static hero-overlay" style="padding:0;">
@@ -149,8 +158,8 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+
   
 </body>
   
 </html>
-</head>

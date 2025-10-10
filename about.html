@@ -8,7 +8,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact - Stackly</title>
+  <title>About - Stackly</title>
   <link rel="icon" href="assets/images/Logo.jpg.png" type="image/png">
   <link rel="shortcut icon" href="assets/images/Logo.jpg.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -41,7 +41,7 @@
             <li><a href="video-gallery.html">Video Gallery</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="404.html">404 Page</a></li>
-            <li><a href="maintenance.html">Maintenance Page</a></li>
+          
           </ul>
         </li>
 
@@ -53,7 +53,7 @@
     </nav>
 
     <div class="header-actions">
-      <a class="btn neon header-join" href="contact.html">JOIN STACKLY</a>
+      <a class="btn neon header-join" href="login.html">JOIN STACKLY</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -141,9 +141,12 @@
       <p>
         Top-quality training in a supportive environment for your fitness goals.
       </p>
-      <button class="contact-btn">
-        Contact Us <i class="fa-solid fa-arrow-right"></i>
-      </button>
+     <a href="pricing.html">
+  <button class="contact-btn">
+    Contact Us <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</a>
+
     </div>
 
     <!-- Middle Image -->
@@ -442,18 +445,6 @@
   </div>
 </section>
 
-<script>
-
-  const faqItems = document.querySelectorAll(".faq-item");
-  faqItems.forEach((item) => {
-    const btn = item.querySelector(".faq-question");
-    btn.addEventListener("click", () => {
-      item.classList.toggle("active");
-    });
-  });
-
-
-</script>
 
 
 
@@ -478,7 +469,7 @@
       <li><i class="fa-solid fa-check"></i> Experience the Best in Fitness</li>
     </ul>
 
-    <a href="pages/membership.html" class="membership-btn">Get Membership</a>
+    <a href="contact.html" class="membership-btn">Get Membership</a>
   </div>
 </section>
 
@@ -545,18 +536,6 @@
       });
     });
   </script>
-  <script>
-    // Show logo loader for 3s on nav link click
-    document.querySelectorAll('.site-nav a').forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        var loader = document.getElementById('logo-loader');
-        loader.style.display = 'flex';
-        setTimeout(function() {
-          window.location.href = link.href;
-        }, 3000);
-      });
-    });
-  </script>
+ 
 </body>
 </html>

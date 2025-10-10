@@ -141,3 +141,7 @@
 
 // scrolling and moving pricing funbction//
 
+
+ 
+
+

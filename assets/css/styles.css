@@ -758,7 +758,7 @@ section { padding: 60px 0; }
 }
 
 .footer-links li a:hover,
-.footer-links li a:focus { color: var(--color-neon); }
+.footer-links li a:focus { color: red; }
 
 .footer-links li a { height: auto; min-width: 0; }
 
@@ -3278,7 +3278,7 @@ blockquote::before {
    🔹 TEAM SECTION
    ================================ */
 .team-section {
-  background: #ffffff; /* White background */
+  background: white; /* White background */
   padding: 80px 0;
   text-align: center;
 }
@@ -3740,5 +3740,499 @@ blockquote::before {
   }
 }
 
+
+
+
+/* faq */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --neon-green: #b7ff00;
+  --text-black: #000;
+  --bg-white: #fff;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-white);
+  color: var(--text-black);
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.contact-hero {
+  padding: 60px 20px;
+  background: var(--light-gray);
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.text-section .title-display {
+  font-size: 64px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.text-section .highlight-block {
+  background: var(--neon-green);
+  color: var(--text-black);
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+
+/* FAQ Section Container */
+.faq-section {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 20px;
+  width: 280px;
+  background: var(--light-gray);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: fit-content;
+}
+
+.sidebar-btn {
+  background: transparent;
+  color: var(--text-black);
+  padding: 12px;
+  border: 2px solid var(--neon-green);
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.sidebar-btn:hover {
+  background: var(--neon-green);
+  color: var(--text-black);
+}
+
+/* Quote box */
+.quote-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quote-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.quote-box p {
+  font-size: 13px;
+  color: var(--text-black);
+}
+
+.quote-box h4 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.quote-btn {
+  display: inline-block;
+  background: var(--neon-green);
+  color: var(--text-black);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.quote-btn:hover{
+  background: var(--color-bg);
+  color: var(--neon-green);
+ 
+}
+
+/* FAQ Content */
+.faq-content {
+  flex: 1;
+}
+
+.faq-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.faq-content h2 span {
+  color: var(--neon-green);
+}
+
+.faq-item {
+  background: var(--bg-white);
+  color: var(--text-black);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 2px solid var(--light-gray);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+  background: var(--bg-white);
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+
+.faq-question:hover {
+  background: var(--neon-green);
+  color: var(--text-black);
+}
+
+.faq-answer {
+  background: var(--light-gray);
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  padding: 15px;
+}
+
+
+/* ------------------------------
+   FAQ PAGE LAYOUT — SIDEBAR + CONTENT
+------------------------------- */
+.faq-section {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 20px;
+  width: 280px;
+  background:white;
+  
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: fit-content;
+}
+
+.sidebar-btn {
+  background: transparent;
+  border: 2px solid black;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.sidebar-btn:hover {
+  background: black;
+  color: #b7ff00;
+}
+
+/* FAQ Content */
+.faq-content {
+  flex: 1;
+}
+
+.faq-content section {
+  margin-bottom: 40px;
+}
+
+.faq-content h2 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.faq-content h2 span {
+  color: #b7ff00;
+  background-color: black;
+  
+}
+
+.faq-item {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 2px solid #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+  background: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background: #b7ff00;
+  color: #000;
+}
+
+.faq-answer {
+  background: #f0f0f0;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .faq-section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .faq-section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .text-section .title-display {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-section .title-display {
+    font-size: 34px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+}
+
+
+
+/* 404 page */
+:root {
+  --neon-green: #b7ff00;
+  --text-black: #000;
+  --bg-white: #ffffff;
+}
+
+:root {
+  --neon-green: #b7ff00;
+  --text-black: #000;
+  --bg-white: #ffffff;
+}
+
+
+
+.error-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.error-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--neon-green);
+  background-color: #000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.error-subtext {
+  font-size: 1rem;
+  color: var(--text-black);
+  margin-bottom: 25px;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 30px;
+  background: var(--neon-green);
+  color: var(--text-black);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: var(--text-black);
+  color: var(--neon-green);
+  box-shadow: 0 0 10px var(--neon-green);
+}
+
+.arrow-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.home-btn:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+@media (max-width: 600px) {
+  .error-heading {
+    font-size: 1.5rem;
+  }
+}
+
+.error-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.error-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--neon-green);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.error-subtext {
+  font-size: 1rem;
+  color: var(--text-black);
+  margin-bottom: 25px;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 30px;
+  background: var(--neon-green);
+  color: var(--text-black);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: var(--text-black);
+  color: var(--neon-green);
+  box-shadow: 0 0 10px var(--neon-green);
+}
+
+.arrow-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.home-btn:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+@media (max-width: 600px) {
+  .error-heading {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+/* login form*/
 
 
