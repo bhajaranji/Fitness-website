@@ -10,232 +10,262 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
   :root {
-    --neon: #b7ff00;
-    --black: #000;
-   ;
-  }
+  --neon: #b7ff00;
+  --black: #000;
+  --white: #ffffff;  /* ✅ Added missing white color */
+}
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
 
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--white);
-    color: var(--black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .auth-box {
-    position: relative;
-    width: 400px;
-    height: 620px;
-    background: black;
-    border: 2px solid var(--neon);
-    border-radius: 20px;
-    box-shadow: 0 0 35px var(--neon);
-    overflow: hidden;
-  }
+.auth-box {
+  position: relative;
+  width: 400px;
+  height: 620px;
+  background: black;
+  border: 2px solid var(--neon);
+  border-radius: 20px;
+  box-shadow: 0 0 35px var(--neon);
+  overflow: hidden;
+}
 
-  .form {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 30px;
-    background: rgba(0,0,0,0.85);
-    transition: transform 0.8s ease, opacity 0.8s ease;
-    overflow: hidden;
-  }
+.form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  background: rgba(0, 0, 0, 0.85);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  overflow: hidden;
+}
 
-  .register-form {
-    transform: translateX(100%);
-    opacity: 0;
-  }
+.register-form {
+  transform: translateX(100%);
+  opacity: 0;
+}
 
-  .auth-box.active .login-form {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
+.auth-box.active .login-form {
+  transform: translateX(-100%);
+  opacity: 0;
+}
 
-  .auth-box.active .register-form {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.auth-box.active .register-form {
+  transform: translateX(0);
+  opacity: 1;
+}
 
-  .form img {
-    width: 80px;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    display: block;
-    object-fit: contain;
-    filter: drop-shadow(0 0 8px var(--neon));
-    border-radius: 10px;
-  }
+.form img {
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px var(--neon));
+  border-radius: 10px;
+}
 
-  .form h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .tagline {
-    font-size: 0.95rem;
-    color: var(--neon);
-    margin-bottom: 20px;
-    font-weight: 600;
-    text-align: center;
-    text-shadow: 0 0 8px var(--neon);
-  }
-
-  .form input {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 12px;
-    border: 2px solid #333;
-    background: transparent;
-    border-radius: 30px;
-    font-size: 1rem;
-    color: var(--white);
-    outline: none;
-    transition: 0.3s;
-  }
-
-  .form input:focus {
-    border-color: var(--neon);
-    box-shadow: 0 0 12px var(--neon);
-  }
-
-  .form a {
-    color: var(--neon);
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-
-  .form a:hover { color: var(--white); }
-
-  /* ✅ Button style as link */
-.btn-link {
-  display: inline-block;
-  text-align: center;
-  color: #000000;
-  
-  background: var(--neon);
-             /* ✅ darker text for better visibility */
+.form h2 {
+  font-size: 1.8rem;
   font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: var(--neon);
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 8px var(--neon);
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: 2px solid #333;
+  background: transparent;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: var(--white);   /* ✅ text now visible */
+  outline: none;
+  transition: 0.3s;
+}
+
+.form input::placeholder {
+  color: #999;   /* ✅ visible placeholder */
+}
+
+.form input:focus {
+  border-color: var(--neon);
+  box-shadow: 0 0 12px var(--neon);
+}
+
+.form a {
+  color: var(--neon);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.form a:hover { color: var(--white); }
+
+/* ✅ Button style as link */
+/* ✅ Unified Button Style (Login + Register + Back to Home) */
+.btn-main {
+  display: inline-block;
+  background: var(--black);
+  color: var(--neon);
   padding: 12px 20px;
   border-radius: 30px;
   font-size: 1rem;
-  width: 100%;
+  border: 2px solid var(--neon);
   text-decoration: none;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
+  transition: 0.3s;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-main:hover {
+  background: var(--neon);
+  color: var(--black);
 }
 
 
+/* Back Button */
+.back-home {
+  margin-top: 15px;
+  display: inline-block;
+  background: var(--black);
+  color: var(--neon);
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  border: 2px solid var(--neon);
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-  .switch-text {
-    margin-top: 12px;
-    font-size: 0.9rem;
-    color: #ccc;
-    text-align: center;
-  }
+.back-home:hover {
+  background: var(--neon);
+  color: var(--black);
+}
 
-  .switch-text span {
-    color: var(--neon);
-    cursor: pointer;
-    font-weight: 600;
-  }
+.switch-text {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+}
 
-  .glow-bg {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, var(--neon) 20%, transparent 20%);
-    background-size: 25px 25px;
-    opacity: 0.1;
-    animation: rotate 25s linear infinite;
-    z-index: -1;
-    top: -100px;
-    left: -150px;
-  }
+.switch-text span {
+  color: var(--neon);
+  cursor: pointer;
+  font-weight: 600;
+}
 
-  @keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+.glow-bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--neon) 20%, transparent 20%);
+  background-size: 25px 25px;
+  opacity: 0.1;
+  animation: rotate 25s linear infinite;
+  z-index: -1;
+  top: -100px;
+  left: -150px;
+}
 
-  @media (max-width: 500px) {
-    .auth-box {
-      width: 90%;
-      height: auto;
-    }
-    .form {
-      padding: 30px 20px;
-    }
-    .form img {
-      width: 65px;
-    }
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 500px) {
+  .auth-box {
+    width: 90%;
+    height: auto;
   }
+  .form {
+    padding: 30px 20px;
+  }
+  .form img {
+    width: 65px;
+  }
+}
+
 </style>
-</head>
-<body>
 
-  <div class="auth-box" id="authBox">
-    <div class="glow-bg"></div>
 
-    <!-- Login Form -->
-    <div class="form login-form">
-      <img src="assets/images/Logo.jpg.png" alt="Stackly Logo">
-      <h2>Login</h2>
-      <div class="tagline">“Train Hard · Stay Fit · Be Unstoppable”</div>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <a href="#">Forgot Password?</a>
-      <!-- ✅ Login button with link -->
-      <a href="404page.html" class="btn-link">Login</a>
-      <p class="switch-text">Don’t have an account? <span id="goRegister">Register</span></p>
+<div class="auth-box">
+  <div class="glow-bg"></div>
+
+  <!-- LOGIN FORM -->
+  <div class="form login-form">
+    <img src="assets/images/Logo.jpg.png" alt="Logo">
+    <h2>Login</h2>
+    <p class="tagline">Welcome back to Stackly</p>
+
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+
+    <a href="#" class="btn-main">Login</a>
+    <div class="switch-text">
+      Don't have an account? <span onclick="toggleForm()">Register</span>
     </div>
-
-    <!-- Register Form -->
-    <div class="form register-form">
-      <img src="assets/images/Logo.jpg.png" alt="Stackly Logo">
-      <h2>Register</h2>
-      <div class="tagline">“Start Strong · Grow Stronger Every Day”</div>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Confirm Password" required>
-      <!-- ✅ Register button with link -->
-      <a href="404page.html" class="btn-link">Register</a>
-      <p class="switch-text">Already have an account? <span id="goLogin">Login</span></p>
-    </div>
+    <a href="index.html" class="back-home">⬅ Back to Home</a>
   </div>
 
+  <!-- REGISTER FORM -->
+  <div class="form register-form">
+    <img src="assets/images/Logo.jpg.png" alt="Logo">
+    <h2>Register</h2>
+    <p class="tagline">Create your new account</p>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+
+    <a href="#" class="btn-main">Register</a>
+    <div class="switch-text">
+      Already have an account? <span onclick="toggleForm()">Login</span>
+    </div>
+    <a href="index.html" class="back-home">⬅ Back to Home</a>
+  </div>
+</div>
+
 <script>
-  const authBox = document.getElementById('authBox');
-  const goRegister = document.getElementById('goRegister');
-  const goLogin = document.getElementById('goLogin');
-
-  goRegister.addEventListener('click', () => {
-    authBox.classList.add('active');
-  });
-
-  goLogin.addEventListener('click', () => {
-    authBox.classList.remove('active');
-  });
+  const authBox = document.querySelector('.auth-box');
+  function toggleForm() {
+    authBox.classList.toggle('active');
+  }
 </script>
 
-</body>
-</html>
+</head>
+<body>

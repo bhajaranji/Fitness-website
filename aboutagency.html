@@ -32,7 +32,7 @@
       </ul>
     </nav>
     <div class="header-actions">
-      <a class="btn neon header-join" href="contact.html">EXPLORE MORE</a>
+      <a class="btn neon header-join" href="login.html">JOIN STACKLY</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -49,9 +49,9 @@
   <div class="page-hero-overlay"></div>
 
   <!-- Images -->
-  <img src="assets/images/servciesagency2.jpg" alt="Banner 1" class="page-hero-bg active">
-  <img src="assets/images/servicesagency1.jpg" alt="Banner 2" class="page-hero-bg">
-  <img src="assets/images/servicesagency3.jpg" alt="Banner 3" class="page-hero-bg">
+  <img src="assets/images/aboutus1.jpg" alt="Banner 1" class="page-hero-bg active">
+  <img src="assets/images/aboutus2.jpg" alt="Banner 2" class="page-hero-bg">
+  <img src="assets/images/aboutus3.jpg" alt="Banner 3" class="page-hero-bg">
 
   <!-- Text Content -->
   <div class="page-hero-content">
@@ -186,7 +186,7 @@
       <!-- Member 3 -->
       <div class="team-card reveal-right">
         <div class="team-image">
-          <img src="assets/images/team4.jpg" alt="David K. Marble">
+          <img src="assets/images/teamdoen.jpg" alt="David K. Marble">
           <div class="image-overlay"></div> 
           <div class="social-icon">
             <i class="fa-brands fa-facebook-f"></i>
@@ -201,7 +201,7 @@
       <!-- Member 4 -->
       <div class="team-card reveal-right">
         <div class="team-image">
-          <img src="assets/images/team5.jpg" alt="Raymond Grimes">
+          <img src="assets/images/teamdon2.jpg" alt="Raymond Grimes">
           <div class="image-overlay"></div> 
           <div class="social-icon">
             <i class="fa-brands fa-facebook-f"></i>
@@ -326,10 +326,10 @@
       </form>
 
       <div class="social-links">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
     </div>
 
@@ -402,6 +402,18 @@
 
   nodes.forEach(el => io.observe(el));
 })();
+
+
+//toggle function//
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('site-nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+
+
 
 
 

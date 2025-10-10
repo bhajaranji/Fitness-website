@@ -32,7 +32,7 @@
       </ul>
     </nav>
     <div class="header-actions">
-      <a class="btn neon header-join" href="contact.html">EXPLORE MORE</a>
+      <a class="btn neon header-join" href="login.html">JOIN STACKLY</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -51,7 +51,7 @@
   <div class="hero-content">
     <h1>We Build Stunning <span>Digital Experiences</span></h1>
     <p>We help businesses grow through clean design, powerful development, and smart marketing.</p>
-    <button class="cta-btn" onclick="window.location.href='contact.html'">
+    <button class="cta-btn" onclick="window.location.href='aboutagency.html'">
       JOIN NOW <i class="fa-solid fa-arrow-right"></i>
     </button>
   </div>
@@ -82,7 +82,7 @@
         <li><i class="fa-solid fa-check"></i> Strategic Digital Campaigns</li>
       </ul>
 
-      <a href="services.html" class="about-btn">
+      <a href="servicesagency.html" class="about-btn">
         Learn More <i class="fa-solid fa-arrow-right"></i>
       </a>
     </div>
@@ -332,7 +332,7 @@
       <!-- Member 3 -->
       <div class="team-card reveal-right">
         <div class="team-image">
-          <img src="assets/images/team4.jpg" alt="David K. Marble">
+          <img src="assets/images/teamdoen.jpg" alt="David K. Marble">
           <div class="image-overlay"></div> 
           <div class="social-icon">
             <i class="fa-brands fa-facebook-f"></i>
@@ -347,7 +347,7 @@
       <!-- Member 4 -->
       <div class="team-card reveal-right">
         <div class="team-image">
-          <img src="assets/images/team5.jpg" alt="Raymond Grimes">
+          <img src="assets/images/teamdon2.jpg" alt="Raymond Grimes">
           <div class="image-overlay"></div> 
           <div class="social-icon">
             <i class="fa-brands fa-facebook-f"></i>
@@ -361,6 +361,38 @@
     </div>
   </div>
 </section>
+
+
+
+
+<!-- CTA BANNER SECTION -->
+<section class="cta-banner">
+  <div class="cta-banner-content">
+    <p class="cta-subtext">Get a Quote</p>
+    <h1 class="cta-title">Grow Your Business With Our Digital Agency Solutions</h1>
+    <a href="404agency.html" class="cta-button">Get Started Now</a>
+  </div>
+</section>
+
+<!-- BRAND LOGO MARQUEE SECTION -->
+<section class="brand-slider">
+  <div class="brand-track">
+    <img src="assets/images/company1.jpg" alt="Company 1">
+    <img src="assets/images/company2.jpg" alt="Company 2">
+    <img src="assets/images/company3.jpg" alt="Company 3">
+    <img src="assets/images/comapny4.jpg" alt="Company 4">
+    <img src="assets/images/comapny5.jpg" alt="Company 5">
+    <img src="assets/images/comapny6.jpg" alt="Company 6">
+    <!-- Duplicate for smooth infinite loop -->
+    <img src="assets/images/company1.jpg" alt="Company 1">
+    <img src="assets/images/company2.jpg" alt="Company 2">
+    <img src="assets/images/company3.jpg" alt="Company 3">
+    <img src="assets/images/comapny4.jpg" alt="Company 4">
+    <img src="assets/images/comapny5.jpg" alt="Company 5">
+    <img src="assets/images/comapny6.jpg" alt="Company 6">
+  </div>
+</section>
+
 
 
 
@@ -417,10 +449,10 @@
       </form>
 
       <div class="social-links">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404page.html"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
     </div>
 
@@ -563,6 +595,22 @@ const reveals = document.querySelectorAll(".reveal");
   }, { threshold: 0.2 });
 
   reveals.forEach((el) => observer.observe(el));
+
+
+
+
+  //toogle function//
+
+
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('site-nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+
+
 
 
 
