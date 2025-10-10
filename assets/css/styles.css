@@ -3266,6 +3266,32 @@ blockquote::before {
     display: flex;
   }
 
+  /* Mobile dropdown styles */
+  .dropdown-content {
+    position: static !important;
+    display: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    box-shadow: none !important;
+    background: rgba(0,0,0,0.05) !important;
+    margin: 5px 0 0 0 !important;
+    padding: 0 !important;
+    border-radius: 8px !important;
+  }
+
+  .dropdown-content.show-dropdown {
+    display: block !important;
+  }
+
+  .dropdown-content li {
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  }
+
+  .dropdown-content a {
+    color: #111 !important;
+    padding: 12px 20px !important;
+  }
+
   .hamburger {
     display: flex;
   }
